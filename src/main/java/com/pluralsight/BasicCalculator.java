@@ -1,5 +1,7 @@
 package com.pluralsight;
 
+import java.util.Scanner;
+
 public class BasicCalculator {
 
 
@@ -7,18 +9,34 @@ public class BasicCalculator {
 
 
         //create a scanner
+        Scanner theScanner = new Scanner(System.in);
 
         //ask the user for the first number
+        System.out.println("Enter first number: ");
 
         //store the answer from the user
+        int firstNumber = theScanner.nextInt();
 
         //ask the user for the second number
+        System.out.println("Enter second number: ");
 
         //store the answer for the second number
+        int secondNumber = theScanner.nextInt();
+
+        //pulls the enter key press or the LF out of the
 
         //we need to ask the user what operation they want to preform
+        System.out.println("""
+                Possible calculations
+                (A)dd
+                (S)ubtract
+                (M)ultiply
+                (D)divide
+                Please select an option
+                """);
 
         //store the answer to what operation
+        String operation = theScanner.nextLine();
 
         //multiply the first and second number and display the result
 
